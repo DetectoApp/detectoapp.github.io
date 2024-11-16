@@ -47,3 +47,18 @@ main {
 footer {
     border-top: solid 3px #D3D3D3;
 }
+
+.section {
+    padding: 64px 100px;
+}
+
+.section-img {
+    width: 520px;
+    height: auto;
+}
+
+.choice-img {
+    width: 96px;
+    height: auto;
+    margin-bottom: 32px;
+}
