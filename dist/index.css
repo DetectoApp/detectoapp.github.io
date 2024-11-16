@@ -1,0 +1,49 @@
+body {
+    font-family: 'DM Sans', sans-serif !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.logo {
+    width: 140px;
+}
+
+.main-nav {
+    border-bottom: solid 3px #D3D3D3;
+    padding: 30px;
+}
+
+.main-footer {
+    margin-top: auto;
+    padding: 32px;
+}
+
+.nav-link {
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: var(--bs-blue);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--bs-blue);
+    background: var(--bs-green);
+}
+
+.footer-logo {
+    width: 260px;
+}
+
+.footer-link {
+    color: var(--bs-black);
+    text-decoration: none;
+}
+
+footer {
+    border-top: solid 3px #D3D3D3;
+}
