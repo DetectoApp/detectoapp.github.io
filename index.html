@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="dist/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
@@ -73,6 +74,48 @@
             </div>
         </section>
         <section class="section">
+            <div class="row justify-content-center">
+                <div class="col-12" x-data="{showing: 0}">
+                    <div class="collapse-btns">
+                        <button role="button" x-bind:class="showing == 0 ? 'selected' : ''" x-on:click="showing = 0">
+                            <span class="material-symbols-rounded">chat_bubble</span>
+                            <span>Dialogo</span>
+                        </button>
+                        <button role="button" x-bind:class="showing == 1 ? 'selected' : ''" x-on:click="showing = 1">
+                            <span class="material-symbols-rounded">experiment</span>
+                            <span>Esami</span>
+                        </button>
+                        <button role="button" x-bind:class="showing == 2 ? 'selected' : ''" x-on:click="showing = 2">
+                            <span class="material-symbols-rounded">diagnosis</span>
+                            <span>Diagnosi</span>
+                        </button>
+                        <button role="button" x-bind:class="showing == 3 ? 'selected' : ''" x-on:click="showing = 3">
+                            <span class="material-symbols-rounded">pill</span>
+                            <span>Terapia</span>
+                        </button>
+                    </div>
+
+                    <div class="collapsed-content mt-2">
+                        <div class="collapsible-content" x-show.important="showing == 0" x-transition>
+                            <p class="text-blue">Raccogli la storia clinica e individua i segnali chiave.</p>
+                            <img src="dist/images/acc1.png">
+                        </div>
+                        <div class="collapsible-content" x-show.important="showing == 1" x-transition>
+                            <p class="text-blue">Male al pancino? Fai l'esamino</p>
+                            <img src="dist/images/acc1.png">
+                        </div>
+                        <div class="collapsible-content" x-show.important="showing == 2" x-transition>
+                            <p class="text-blue">Non era una terza palla</p>
+                            <img src="dist/images/acc1.png">
+                        </div>
+                        <div class="collapsible-content" x-show.important="showing == 3" x-transition>
+                            <p class="text-blue">Fentanyl</p>
+                            <img src="dist/images/acc1.png">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section">
             <h4 class="text-blue my-4">Perchè Detecto è la scelta giusta</h4>
             <div class="row">
                 <div class="col-12 col-md-4 d-flex flex-column gap-2">
@@ -94,6 +137,45 @@
                     <p>Accedi a casi di tutte le specialità mediche, mentre applichi le competenze chiave per la tua
                         carriera futura.</p>
                 </div>
+        </section>
+        <section class="section">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="review">
+                        <div class="review-score">
+                            <img src="dist/images/heart.png">
+                            <img src="dist/images/heart.png">
+                            <img src="dist/images/heart.png">
+                            <img src="dist/images/heart.png">
+                            <img src="dist/images/heart.png">
+                        </div>
+                        <p class="review-text">
+                            Detecto mi ha permesso di applicare le mie conoscenze prima ancora di provarle sul campo.
+                            Sono arrivato ai pazienti veri
+                            molto più preparato!
+                        </p>
+                        <p class="review-author">Giacomo, Studente di Medicina al secondo anno</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="review">
+                        <div class="review-score">
+                            <img src="dist/images/heart.png">
+                            <img src="dist/images/heart.png">
+                            <img src="dist/images/heart.png">
+                            <img src="dist/images/heart.png">
+                            <img src="dist/images/heart.png">
+                        </div>
+                        <p class="review-text">
+                            Ho provato i casi clinici di Detecto e devo dire che la qualità è altissima. L’ho
+                            consigliata ai miei studenti per
+                            applicare le nozioni apprese!
+                        </p>
+                        <p class="review-author">Filippo, Cardiologo e docente</p>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
 
     </main>
