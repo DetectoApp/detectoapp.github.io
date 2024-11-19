@@ -19,7 +19,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
 </head>
+
+<template x-component="dbutton">
+    <div class="d-button" x-data="{  ...$el.parentElement.data()}">
+        <div class="background"></div>
+        <div class="foreground">
+            <p class="d-button-text m-0" x-text="content"></p>
+        </div>
+    </div>
+</template>
 
 <body>
     <main>
@@ -57,8 +67,10 @@
         <section class="section">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-md-6">
-                    <h1 class="text-blue w-50">Trasforma la tua carriera medica con casi clinici interattivi</h1>
-                    <p>Detecto è la piattaforma che potenzia la tua formazione medica, ovunque e in qualsiasi momento.
+                    <h1 class="text-blue w-50">Trasforma la tua carriera medica con casi clinici interattivi
+                    </h1>
+                    <p>Detecto è la piattaforma che potenzia la tua formazione medica, ovunque e in qualsiasi
+                        momento.
                     </p>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center">
@@ -67,7 +79,8 @@
         </section>
         <section>
             <div class="container-fluid section bg-green">
-                <h3 class="text-blue w-75">Studiare Medicina è una sfida, e fare esperienza sul campo non è sempre
+                <h3 class="text-blue w-75">Studiare Medicina è una sfida, e fare esperienza sul campo non è
+                    sempre
                     possibile.
                     Detecto ti aiuta a crescere come
                     medico, anche nelle pause e nei momenti di svago.</h3>
@@ -96,19 +109,19 @@
                     </div>
 
                     <div class="collapsed-content mt-2">
-                        <div class="collapsible-content" x-show.important="showing == 0" x-transition>
+                        <div class="collapsible-content" x-show.important="showing == 0">
                             <p class="text-blue">Raccogli la storia clinica e individua i segnali chiave.</p>
                             <img src="dist/images/acc1.png">
                         </div>
-                        <div class="collapsible-content" x-show.important="showing == 1" x-transition>
+                        <div class="collapsible-content" x-show.important="showing == 1">
                             <p class="text-blue">Male al pancino? Fai l'esamino</p>
                             <img src="dist/images/acc1.png">
                         </div>
-                        <div class="collapsible-content" x-show.important="showing == 2" x-transition>
+                        <div class="collapsible-content" x-show.important="showing == 2">
                             <p class="text-blue">Non era una terza palla</p>
                             <img src="dist/images/acc1.png">
                         </div>
-                        <div class="collapsible-content" x-show.important="showing == 3" x-transition>
+                        <div class="collapsible-content" x-show.important="showing == 3">
                             <p class="text-blue">Fentanyl</p>
                             <img src="dist/images/acc1.png">
                         </div>
@@ -121,20 +134,23 @@
                 <div class="col-12 col-md-4 d-flex flex-column gap-2">
                     <img src="dist/images/choice1.png" class="choice-img">
                     <h6 class="m-0">Apprendimento interattivo</h6>
-                    <p>Casi clinici simulati e realistici, progettati per metterti alla prova e farti crescere, rendendo
+                    <p>Casi clinici simulati e realistici, progettati per metterti alla prova e farti crescere,
+                        rendendo
                         lo studio più
                         coinvolgente.</p>
                 </div>
                 <div class="col-12 col-md-4 d-flex flex-column gap-2">
                     <img src="dist/images/choice2.png" class="choice-img">
                     <h6 class="m-0">Preparazione completa</h6>
-                    <p>Allenati alla logica clinica in un ambiente controllato, applicando conoscenze teoriche a scenari
+                    <p>Allenati alla logica clinica in un ambiente controllato, applicando conoscenze teoriche a
+                        scenari
                         reali – senza stress.</p>
                 </div>
                 <div class="col-12 col-md-4 d-flex flex-column gap-2">
                     <img src="dist/images/choice3.png" class="choice-img">
                     <h6 class="m-0">Esplora le specialità</h6>
-                    <p>Accedi a casi di tutte le specialità mediche, mentre applichi le competenze chiave per la tua
+                    <p>Accedi a casi di tutte le specialità mediche, mentre applichi le competenze chiave per la
+                        tua
                         carriera futura.</p>
                 </div>
         </section>
@@ -150,7 +166,8 @@
                             <img src="dist/images/heart.png">
                         </div>
                         <p class="review-text">
-                            Detecto mi ha permesso di applicare le mie conoscenze prima ancora di provarle sul campo.
+                            Detecto mi ha permesso di applicare le mie conoscenze prima ancora di provarle sul
+                            campo.
                             Sono arrivato ai pazienti veri
                             molto più preparato!
                         </p>
@@ -177,7 +194,16 @@
             </div>
             </div>
         </section>
-
+        <section class="section ">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <x-dbutton content="ISCRIVITI"></x-dbutton>
+                        <button class="btn btn-primary">ISCRIVITY</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -210,7 +236,7 @@
         </div>
     </footer>
 
-
+    <script src="dist/index.js"></script>
 </body>
 
 
