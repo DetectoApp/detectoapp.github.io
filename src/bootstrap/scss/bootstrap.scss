@@ -9,7 +9,8 @@
 $offcanvas-vertical-height: 100vh;
 $detecto-palette: (
     "blue": #3750CC,
-    "green": #B4F7EC
+    "green": #B4F7EC,
+    "green-secondary": #6AEFD9
 );
 $theme-colors: map-merge($theme-colors, $detecto-palette);
 @import "maps";

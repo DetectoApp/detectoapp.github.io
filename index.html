@@ -23,12 +23,10 @@
 </head>
 
 <template x-component="dbutton">
-    <div class="d-button" x-data="{  ...$el.parentElement.data()}">
-        <div class="background"></div>
-        <div class="foreground">
-            <p class="d-button-text m-0" x-text="content"></p>
-        </div>
-    </div>
+    <button class="d-button" x-data="{  ...$el.parentElement.data()}">
+        <p class="d-button-text m-0" x-text="content"></p>
+    </button>
+
 </template>
 
 <body>
@@ -196,10 +194,9 @@
         </section>
         <section class="section ">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 d-flex justify-content-center">
                     <div>
                         <x-dbutton content="ISCRIVITI"></x-dbutton>
-                        <button class="btn btn-primary">ISCRIVITY</button>
                     </div>
                 </div>
             </div>
