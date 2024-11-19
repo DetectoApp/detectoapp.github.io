@@ -23,7 +23,7 @@
 </head>
 
 <template x-component="dbutton">
-    <button class="d-button" x-data="{  ...$el.parentElement.data()}">
+    <button class="d-button" x-data="{  ...$el.parentElement.data()}" :class="classes">
         <p class="d-button-text m-0" x-text="content"></p>
     </button>
 
@@ -35,10 +35,12 @@
             <div class="row">
                 <div class="col-12 d-flex align-items-center justify-content-between">
                     <img src="dist/images/logo.png" class="logo">
-                    <div class="d-none d-md-flex gap-3">
+                    <div class="d-none d-md-flex gap-3 align-items-center">
                         <a href="#" class="nav-link">Homepage</a>
                         <a href="#" class="nav-link">Per medici</a>
                         <a href="#" class="nav-link">Università</a>
+                        <x-dbutton content="CONTATTACI" classes="bg-white"></x-dbutton>
+                        <x-dbutton content="ISCRIVITI"></x-dbutton>
                     </div>
                     <div class="d-md-none">
                         <span role="button" class="material-symbols-rounded text-blue" data-bs-toggle="offcanvas"

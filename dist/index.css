@@ -139,7 +139,7 @@ footer {
     border: 2px solid var(--bs-blue);
     border-bottom: 6px solid var(--bs-blue);
     border-radius: 8px;
-    padding: 15px 28px;
+    padding: 12px;
     transition: all 0.1s;
 }
 
