@@ -30,9 +30,9 @@
 </head>
 
 <template x-component="dbutton">
-    <button class="d-button" x-data="{  ...$el.parentElement.data()}" :class="classes">
+    <a class="d-button" x-data="{ ...$el.parentElement.data()}" :href="link ?? ''" :class="classes ?? ''">
         <p class="d-button-text m-0" x-text="content"></p>
-    </button>
+    </a>
 
 </template>
 
@@ -45,8 +45,9 @@
                     <div class="d-none d-md-flex gap-3 align-items-center">
                         <a href="/" class="nav-link">Homepage</a>
                         <a href="#" class="nav-link selected">Per medici</a>
-                        <x-dbutton content="CONTATTACI" classes="bg-white"></x-dbutton>
-                        <x-dbutton content="ISCRIVITI"></x-dbutton>
+                        <x-dbutton content="CONTATTACI" link="mailto:detectoapp@gmail.com"
+                            classes="bg-white"></x-dbutton>
+                        <x-dbutton content="ISCRIVITI" link="/subscribe.html"></x-dbutton>
                     </div>
                     <div class="d-md-none">
                         <span role="button" class="material-symbols-rounded text-blue" data-bs-toggle="offcanvas"
@@ -118,8 +119,8 @@
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <h1 class="text-blue">Alcune domande che potresti avere</h1>
                 </div>
-                <div class="col-8 d-flex align-items-center justify-content-end">
-                    <div class="accordion w-75" id="doc-accordion">
+                <div class="col-8 d-flex flex-column gap-3 align-items-end justify-content-center ">
+                    <div class="accordion w-75" id="doc-accordion1">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -128,7 +129,7 @@
                                 </button>
                             </h2>
                             <div id="doc-accordion-item-1" class="accordion-collapse collapse"
-                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion">
+                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion1">
                                 <div class="accordion-body">
                                     I medici che hanno un’abbonamento attivo possono partecipare ai corsi ECM inclusi
                                     nel piano. Anche gli ECM
@@ -137,6 +138,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="accordion w-75" id="doc-accordion2">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -146,23 +150,26 @@
                                 </button>
                             </h2>
                             <div id="doc-accordion-item-2" class="accordion-collapse collapse"
-                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion">
+                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion2">
                                 <div class="accordion-body">
                                     No, puoi scegliere di pubblicare i casi o mantenerli privati per uso personale o
                                     accademico.
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="accordion w-75" id="doc-accordion3" x-data="{collapsed: false}">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#doc-accordion-item-3" aria-expanded="true"
-                                    aria-controls="collapseOne">
+                                    x-on:click="collapsed = !collapsed">
                                     Come funziona la creazione dei case report?
                                 </button>
                             </h2>
                             <div id="doc-accordion-item-3" class="accordion-collapse collapse"
-                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion">
+                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion3">
                                 <div class="accordion-body">
                                     Grazie al supporto dell’intelligenza artificiale, puoi generare case report
                                     dettagliati direttamente dai casi clinici
@@ -183,7 +190,7 @@
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
                     <div>
-                        <x-dbutton content="ISCRIVITI"></x-dbutton>
+                        <x-dbutton content="ISCRIVITI" link="/subscribe.html"></x-dbutton>
                     </div>
                 </div>
             </div>
@@ -199,9 +206,8 @@
             <div class="col-12 col-md-3 mt-4">
                 <h6>Menu</h6>
                 <div class="d-flex flex-column gap-2">
-                    <a href="#" class="footer-link">Homepage</a>
-                    <a href="#" class="footer-link">Per medici</a>
-                    <a href="#" class="footer-link">Università</a>
+                    <a href="/" class="footer-link">Homepage</a>
+                    <a href="/doctors.html" class="footer-link">Per medici</a>
                 </div>
             </div>
             <div class="col-12  col-md-3 mt-4 ">
@@ -217,7 +223,7 @@
             <div class="col-12 col-md-3 mt-4">
                 <h6>Contatti</h6>
                 <div class="d-flex flex-column gap-2">
-                    <a href="#" class="footer-link">Contattaci</a>
+                    <a href="mailto:detectoapp@gmail.com" class="footer-link">Contattaci</a>
                 </div>
             </div>
         </div>

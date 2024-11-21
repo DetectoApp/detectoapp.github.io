@@ -7,13 +7,19 @@
 @import "functions";
 @import "variables";
 $offcanvas-vertical-height: 100vh;
+$blue : #3750CC;
+$grey : #D3D3D3;
+$green : #B4F7EC;
+$green-secondary : #6AEFD9;
 $detecto-palette: (
-    "blue": #3750CC,
-    "green": #B4F7EC,
-    "green-secondary": #6AEFD9
+    "blue": $blue,
+    "grey": $grey,
+    "green": $green,
+    "green-secondary": $green-secondary
 );
 $theme-colors: map-merge($theme-colors, $detecto-palette);
-
+$accordion-border-width: 2px;
+$accordion-border-color: $grey;
 @import "maps";
 @import "mixins";
 @import "utilities";

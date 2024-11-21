@@ -8,7 +8,10 @@ document.querySelectorAll('[x-component]').forEach(component => {
 
         data() {
             const attributes = this.getAttributeNames()
-            const data = {}
+            const data = {
+                'link': '#no',
+                'classes': '',
+            }
             attributes.forEach(attribute => {
                 data[attribute] = this.getAttribute(attribute)
             })

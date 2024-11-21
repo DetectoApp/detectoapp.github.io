@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'DM Sans', sans-serif !important;
     min-height: 100vh;
@@ -157,8 +161,6 @@ footer {
     background: var(--bs-green-secondary);
 }
 
-.accordion-item {
-    margin-bottom: 16px;
-    border-radius: 8px;
-    border: 2px solid #D3D3D3;
+.accordion-button:not(.collapsed) {
+    border-bottom: 0;
 }

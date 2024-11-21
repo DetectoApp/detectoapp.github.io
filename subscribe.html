@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLEMX1LN44"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TLEMX1LN44');
+    </script>
+    <title>Detecto - Susbcribe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.5, viewport-fit: cover" />
+    <link rel="stylesheet" href="dist/bootstrap.css">
+    <link rel="stylesheet" href="dist/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="dist/popper.min.js"></script>
+    <script src="dist/bootstrap.min.js"></script>
+    <script src="dist/alpine.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+
+<template x-component="dbutton">
+    <a class="d-button" x-data="{ ...$el.parentElement.data()}" :href="link ?? ''" :class="classes ?? ''">
+        <p class="d-button-text m-0" x-text="content"></p>
+    </a>
+</template>
+
+<body>
+    <main>
+        <nav class="main-nav">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <img src="dist/images/logo.png" class="logo">
+                    <div class="d-none d-md-flex gap-3 align-items-center">
+                        <a href="/" class="nav-link">Homepage</a>
+                        <a href="/doctors.html" class="nav-link">Per medici</a>
+                        <x-dbutton content="CONTATTACI" link="mailto:detectoapp@gmail.com"
+                            classes="bg-white"></x-dbutton>
+                        <x-dbutton content="ISCRIVITI" link="/subscribe.html"></x-dbutton>
+                    </div>
+                    <div class="d-md-none">
+                        <span role="button" class="material-symbols-rounded text-blue" data-bs-toggle="offcanvas"
+                            data-bs-target="#nav-menu">menu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="nav-menu" data-bs-backdrop="false">
+                <div class="offcanvas-header">
+                    <img src="dist/images/logo.png" class="logo">
+                    <span role="button" class="material-symbols-rounded text-blue"
+                        data-bs-dismiss="offcanvas">close</span>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="/index.html" class="nav-link text-center w-100">Homepage</a>
+                        <a href="/doctors.html" class="nav-link text-center w-100">Per medici</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="row">
+                <div class="col-6 d-flex align-items-center">
+                    <h1 class="text-blue text-center">Resta aggiornato e ottieni un accesso prioritario a Detecto</h1>
+                </div>
+                <div class="col-6 d-flex justify-content-center">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeloq8din23lQfZ8PQBMcKhsACtAKDb_dlx1BAwGxWNAIGj3w/viewform?embedded=true"
+                        width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <img src="dist/images/footer-logo.png" class="footer-logo">
+            </div>
+            <div class="col-12 col-md-3 mt-4">
+                <h6>Menu</h6>
+                <div class="d-flex flex-column gap-2">
+                    <a href="/" class="footer-link">Homepage</a>
+                    <a href="/doctors.html" class="footer-link">Per medici</a>
+                </div>
+            </div>
+            <div class="col-12  col-md-3 mt-4 ">
+                <h6>Privacy e termini</h6>
+                <div class="d-flex flex-column gap-2">
+                    <a href="https://www.iubenda.com/privacy-policy/42165853" class="footer-link" target="_blank"
+                        title="Privacy Policy">Privacy
+                        Policy</a>
+                    <a href="https://www.iubenda.com/privacy-policy/42165853/cookie-policy" target="_blank"
+                        class="footer-link" title="Cookie Policy ">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mt-4">
+                <h6>Contatti</h6>
+                <div class="d-flex flex-column gap-2">
+                    <a href="mailto:detectoapp@gmail.com" class="footer-link">Contattaci</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dist/index.js"></script>
+
+    <script
+        type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+
+    <script
+        type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+    <script type="text/javascript">
+        var _iub = _iub || [];
+        _iub.csConfiguration = { "siteId": 3841155, "cookiePolicyId": 42165853, "lang": "it", "storage": { "useSiteId": true } };
+    </script>
+    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3841155.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+</body>
+
+
+</html>
