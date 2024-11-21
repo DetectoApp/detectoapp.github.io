@@ -35,6 +35,11 @@ main {
     background: var(--bs-green);
 }
 
+.nav-link.selected {
+    color: var(--bs-blue);
+    background: var(--bs-green);
+}
+
 .footer-logo {
     width: 260px;
 }
@@ -96,7 +101,7 @@ footer {
 }
 
 .collapsible-content img {
-    width: 100%;
+    width: 700px;
     height: auto;
 
 }
@@ -150,4 +155,10 @@ footer {
 
 .d-button:hover {
     background: var(--bs-green-secondary);
+}
+
+.accordion-item {
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 2px solid #D3D3D3;
 }

@@ -11,7 +11,7 @@
 
         gtag('config', 'G-TLEMX1LN44');
     </script>
-    <title>Detecto - Students</title>
+    <title>Detecto - Doctors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.5, viewport-fit: cover" />
     <link rel="stylesheet" href="dist/bootstrap.css">
     <link rel="stylesheet" href="dist/index.css">
@@ -43,8 +43,8 @@
                 <div class="col-12 d-flex align-items-center justify-content-between">
                     <img src="dist/images/logo.png" class="logo">
                     <div class="d-none d-md-flex gap-3 align-items-center">
-                        <a href="#" class="nav-link selected">Homepage</a>
-                        <a href="/doctors.html" class="nav-link">Per medici</a>
+                        <a href="/" class="nav-link">Homepage</a>
+                        <a href="#" class="nav-link selected">Per medici</a>
                         <x-dbutton content="CONTATTACI" classes="bg-white"></x-dbutton>
                         <x-dbutton content="ISCRIVITI"></x-dbutton>
                     </div>
@@ -69,132 +69,117 @@
             </div>
         </nav>
 
-        <section class="section">
+        <section class="section" style="padding-right: 0;">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-md-6">
-                    <h1 class="text-blue w-50">Trasforma la tua carriera medica con casi clinici interattivi
+                    <h1 class="text-blue w-75">Trasforma il tuo modo di insegnare e condividere la tua esperienza
+                        medica.
                     </h1>
-                    <p>Detecto è la piattaforma che potenzia la tua formazione medica, ovunque e in qualsiasi
-                        momento.
+                    <p>Con Detecto, semplifica la didattica e contribuisci alla formazione della prossima generazione di
+                        medici. Progetta casi
+                        clinici interattivi, ottieni case report dettagliati con l’AI. E noi premiamo il tuo impegno con
+                        ECM gratuiti.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <img src="dist/images/img_1.png" class="section-img">
+                <div class="col-12 col-md-6 d-flex justify-content-end">
+                    <img src="dist/images/img_1_doc.png" class="section-img">
                 </div>
         </section>
-        <section>
-            <div class="container-fluid section bg-green">
-                <h3 class="text-blue w-75">Studiare Medicina è una sfida, e fare esperienza sul campo non è
-                    sempre
-                    possibile.
-                    Detecto ti aiuta a crescere come
-                    medico, anche nelle pause e nei momenti di svago.</h3>
-            </div>
-        </section>
-        <section class="section">
-            <div class="row justify-content-center">
-                <div class="col-12" x-data="{showing: 0}">
-                    <div class="collapse-btns">
-                        <button role="button" x-bind:class="showing == 0 ? 'selected' : ''" x-on:click="showing = 0">
-                            <span class="material-symbols-rounded">chat_bubble</span>
-                            <span>Dialogo</span>
-                        </button>
-                        <button role="button" x-bind:class="showing == 1 ? 'selected' : ''" x-on:click="showing = 1">
-                            <span class="material-symbols-rounded">experiment</span>
-                            <span>Esami</span>
-                        </button>
-                        <button role="button" x-bind:class="showing == 2 ? 'selected' : ''" x-on:click="showing = 2">
-                            <span class="material-symbols-rounded">diagnosis</span>
-                            <span>Diagnosi</span>
-                        </button>
-                    </div>
 
-                    <div class="collapsed-content mt-2">
-                        <div class="collapsible-content" x-show.important="showing == 0">
-                            <p class="text-blue">Interagisci con il paziente, individuando i segnali chiave per
-                                orientare il tuo ragionamento.</p>
-                            <img src="dist/images/img_2.png">
-                        </div>
-                        <div class="collapsible-content" x-show.important="showing == 1">
-                            <p class="text-blue">Prescrivi gli esami più appropriati e interpreta i risultati per
-                                confermare o escludere ipotesi diagnostiche.</p>
-                            <img src="dist/images/img_3.png">
-                        </div>
-                        <div class="collapsible-content" x-show.important="showing == 2">
-                            <p class="text-blue">Combina i dati raccolti per formulare una diagnosi accurata, affinando
-                                la tua logica clinica passo dopo passo.</p>
-                            <img src="dist/images/img_4.png">
-                        </div>
-                    </div>
-                </div>
-        </section>
+
         <section class="section">
-            <h4 class="text-blue my-4">Perchè Detecto è la scelta giusta</h4>
+            <h4 class="text-blue my-4">Cosa puoi fare con Detecto?</h4>
             <div class="row">
                 <div class="col-12 col-md-4 d-flex flex-column gap-2">
-                    <img src="dist/images/choice1.png" class="choice-img">
-                    <h6 class="m-0">Apprendimento interattivo</h6>
-                    <p>Casi clinici simulati e realistici, progettati per metterti alla prova e farti crescere,
-                        rendendo
-                        lo studio più
-                        coinvolgente.</p>
+                    <img src="dist/images/choice1_doc.png" class="choice-img">
+                    <h6 class="m-0">Crea e condividi casi clinici in modo semplice</h6>
+                    <p>Progetta casi clinici gamificati in pochi clic con il nostro Case Builder. Pubblica i casi e
+                        aiuta migliaia di studenti
+                        a crescere professionalmente.</p>
                 </div>
                 <div class="col-12 col-md-4 d-flex flex-column gap-2">
-                    <img src="dist/images/choice2.png" class="choice-img">
-                    <h6 class="m-0">Preparazione completa</h6>
-                    <p>Allenati alla logica clinica in un ambiente controllato, applicando conoscenze teoriche a
-                        scenari
-                        reali – senza stress.</p>
+                    <img src="dist/images/choice2_doc.png" class="choice-img">
+                    <h6 class="m-0">Strumenti avanzati per la didattica e la ricerca</h6>
+                    <p>Integra i casi clinici creati nelle tue lezioni e sfrutta l’AI per trasformarli facilmente in
+                        case report dettagliati,
+                        valorizzando il tuo lavoro nella comunità scientifica.</p>
                 </div>
                 <div class="col-12 col-md-4 d-flex flex-column gap-2">
-                    <img src="dist/images/choice3.png" class="choice-img">
-                    <h6 class="m-0">Esplora le specialità</h6>
-                    <p>Accedi a casi di tutte le specialità mediche, mentre applichi le competenze chiave per la
-                        tua
-                        carriera futura.</p>
+                    <img src="dist/images/choice3_doc.png" class="choice-img">
+                    <h6 class="m-0">ECM gratuiti per valorizzare il tuo impegno</h6>
+                    <p>Con un abbonamento attivo a Detecto, puoi accedere a formazione ECM gratuita, per ringraziarti
+                        del tuo contributo alla
+                        crescita della professione medica.</p>
                 </div>
         </section>
+
         <section class="section">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="review">
-                        <div class="review-score">
-                            <img src="dist/images/heart.png">
-                            <img src="dist/images/heart.png">
-                            <img src="dist/images/heart.png">
-                            <img src="dist/images/heart.png">
-                            <img src="dist/images/heart.png">
-                        </div>
-                        <p class="review-text">
-                            Detecto mi ha permesso di applicare le mie conoscenze prima ancora di provarle sul
-                            campo.
-                            Sono arrivato ai pazienti veri
-                            molto più preparato!
-                        </p>
-                        <p class="review-author">Giacomo, Studente di Medicina al secondo anno</p>
-                    </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <h1 class="text-blue">Alcune domande che potresti avere</h1>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="review">
-                        <div class="review-score">
-                            <img src="dist/images/heart.png">
-                            <img src="dist/images/heart.png">
-                            <img src="dist/images/heart.png">
-                            <img src="dist/images/heart.png">
-                            <img src="dist/images/heart.png">
+                <div class="col-8 d-flex align-items-center justify-content-end">
+                    <div class="accordion w-75" id="doc-accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#doc-accordion-item-1" aria-controls="collapseOne">
+                                    Come ottengo i crediti ECM gratuiti?
+                                </button>
+                            </h2>
+                            <div id="doc-accordion-item-1" class="accordion-collapse collapse"
+                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion">
+                                <div class="accordion-body">
+                                    I medici che hanno un’abbonamento attivo possono partecipare ai corsi ECM inclusi
+                                    nel piano. Anche gli ECM
+                                    sono
+                                    interattivi e gamificati come i casi clinici.
+                                </div>
+                            </div>
                         </div>
-                        <p class="review-text">
-                            Ho provato i casi clinici di Detecto e devo dire che la qualità è altissima. L’ho
-                            consigliata ai miei studenti per
-                            applicare le nozioni apprese!
-                        </p>
-                        <p class="review-author">Filippo, Cardiologo e docente</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#doc-accordion-item-2" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    I casi clinici sono sempre condivisi pubblicamente?
+                                </button>
+                            </h2>
+                            <div id="doc-accordion-item-2" class="accordion-collapse collapse"
+                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion">
+                                <div class="accordion-body">
+                                    No, puoi scegliere di pubblicare i casi o mantenerli privati per uso personale o
+                                    accademico.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#doc-accordion-item-3" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Come funziona la creazione dei case report?
+                                </button>
+                            </h2>
+                            <div id="doc-accordion-item-3" class="accordion-collapse collapse"
+                                aria-labelledby="headingOne" data-bs-parent="#doc-accordion">
+                                <div class="accordion-body">
+                                    Grazie al supporto dell’intelligenza artificiale, puoi generare case report
+                                    dettagliati direttamente dai casi clinici
+                                    che crei su Detecto. L’AI ti aiuta a strutturare il contenuto in modo chiaro e
+                                    professionale, risparmiando tempo e
+                                    garantendo coerenza, così da contribuire al tuo lavoro didattico e alla comunità
+                                    scientifica.
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            </div>
         </section>
-        <section class="section ">
+
+        <section class="section">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
                     <div>

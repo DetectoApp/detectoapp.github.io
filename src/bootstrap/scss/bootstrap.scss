@@ -13,6 +13,7 @@ $detecto-palette: (
     "green-secondary": #6AEFD9
 );
 $theme-colors: map-merge($theme-colors, $detecto-palette);
+
 @import "maps";
 @import "mixins";
 @import "utilities";
