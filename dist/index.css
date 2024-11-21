@@ -1,3 +1,7 @@
+* {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -7,6 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 
 main {
@@ -57,9 +62,7 @@ footer {
     border-top: solid 3px #D3D3D3;
 }
 
-.section {
-    padding: 64px 100px;
-}
+
 
 .section-img {
     width: 520px;
@@ -163,4 +166,24 @@ footer {
 
 .accordion-button:not(.collapsed) {
     border-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        padding: 24px;
+    }
+
+    .review {
+        margin-bottom: 16px;
+    }
+
+    .section-img {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 64px 100px;
+    }
 }

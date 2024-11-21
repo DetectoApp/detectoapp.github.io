@@ -20,6 +20,8 @@ $detecto-palette: (
 $theme-colors: map-merge($theme-colors, $detecto-palette);
 $accordion-border-width: 2px;
 $accordion-border-color: $grey;
+$accordion-button-active-bg: $green;
+$accordion-button-active-color: $blue;
 @import "maps";
 @import "mixins";
 @import "utilities";

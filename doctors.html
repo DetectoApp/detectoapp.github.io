@@ -41,9 +41,10 @@
         <nav class="main-nav">
             <div class="row">
                 <div class="col-12 d-flex align-items-center justify-content-between">
-                    <img src="dist/images/logo.png" class="logo">
+                    <a href="/">
+                        <img src="dist/images/logo.png" class="logo">
+                    </a>
                     <div class="d-none d-md-flex gap-3 align-items-center">
-                        <a href="/" class="nav-link">Homepage</a>
                         <a href="#" class="nav-link selected">Per medici</a>
                         <x-dbutton content="CONTATTACI" link="mailto:detectoapp@gmail.com"
                             classes="bg-white"></x-dbutton>
@@ -57,7 +58,9 @@
             </div>
             <div class="offcanvas offcanvas-top" tabindex="-1" id="nav-menu" data-bs-backdrop="false">
                 <div class="offcanvas-header">
-                    <img src="dist/images/logo.png" class="logo">
+                    <a href="/">
+                        <img src="dist/images/logo.png" class="logo">
+                    </a>
                     <span role="button" class="material-symbols-rounded text-blue"
                         data-bs-dismiss="offcanvas">close</span>
                 </div>
@@ -73,7 +76,7 @@
         <section class="section" style="padding-right: 0;">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-md-6">
-                    <h1 class="text-blue w-75">Trasforma il tuo modo di insegnare e condividere la tua esperienza
+                    <h1 class="text-blue ">Trasforma il tuo modo di insegnare e condividere la tua esperienza
                         medica.
                     </h1>
                     <p>Con Detecto, semplifica la didattica e contribuisci alla formazione della prossima generazione di
@@ -116,11 +119,12 @@
 
         <section class="section">
             <div class="row">
-                <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
                     <h1 class="text-blue">Alcune domande che potresti avere</h1>
                 </div>
-                <div class="col-8 d-flex flex-column gap-3 align-items-end justify-content-center ">
-                    <div class="accordion w-75" id="doc-accordion1">
+                <div
+                    class="col-12 col-md-8 d-flex flex-column gap-3 align-items-center align-items-md-end justify-content-center ">
+                    <div class="accordion w-100" id="doc-accordion1">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -140,7 +144,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion w-75" id="doc-accordion2">
+                    <div class="accordion w-100" id="doc-accordion2">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -159,7 +163,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion w-75" id="doc-accordion3" x-data="{collapsed: false}">
+                    <div class="accordion w-100" id="doc-accordion3" x-data="{collapsed: false}">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -201,12 +205,13 @@
     <footer class="main-footer">
         <div class="row">
             <div class="col-12 col-md-3">
-                <img src="dist/images/footer-logo.png" class="footer-logo">
+                <a href="/">
+                    <img src="dist/images/footer-logo.png" class="footer-logo">
+                </a>
             </div>
             <div class="col-12 col-md-3 mt-4">
                 <h6>Menu</h6>
                 <div class="d-flex flex-column gap-2">
-                    <a href="/" class="footer-link">Homepage</a>
                     <a href="/doctors.html" class="footer-link">Per medici</a>
                 </div>
             </div>
